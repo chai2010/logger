@@ -12,7 +12,7 @@ import (
 )
 
 func init() {
-	logger.SetLogger(logger.NewStdLogger(os.Stderr, "", log.Lshortfile))
+	logger.SetLogger(logger.NewStdLogger(os.Stderr, "", "", log.Lshortfile))
 }
 
 func main() {

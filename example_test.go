@@ -20,7 +20,7 @@ func Example() {
 }
 
 func ExampleNewStdLogger() {
-	var logger = logger.NewStdLogger(os.Stderr, "", log.Lshortfile)
+	var logger = logger.NewStdLogger(os.Stderr, "", "", log.Lshortfile)
 
 	logger.Debug("1+1=2")
 	logger.Info("hello")
