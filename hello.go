@@ -1,6 +1,9 @@
-# Simple level logging package.
+// Copyright 2018 <chaishushan{AT}gmail.com>. All rights reserved.
+// Use of this source code is governed by a Apache-style
+// license that can be found in the LICENSE file.
 
-```go
+// +build ignore
+
 package main
 
 import (
@@ -18,11 +21,3 @@ func main() {
 	logger.Debug(runtime.Version())
 	logger.Info("hello")
 }
-```
-
-Output:
-
-```
-hello.go:21: [DEBUG] go1.10
-hello.go:22: [INFO] hello
-```
