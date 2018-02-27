@@ -6,20 +6,20 @@ package logger_test
 
 import (
 	"os"
-	
+
 	"github.com/chai2010/logger"
 )
 
 func ExampleGetLogger() {
 	var logger = logger.GetLogger()
-	
+
 	logger.SetLevel("DEBUG")
 	logger.Debug("debug: ...")
 	logger.Info("hello")
 }
 
 func ExampleNewStdLogger() {
-	var logger = logger.NewStdLogger(os.Stderr)
+	var logger = logger.NewStdLogger(os.Stderr, "", 0)
 
 	logger.Debug("debug: ...")
 	logger.Info("hello")
