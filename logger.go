@@ -31,6 +31,9 @@ func SetLogger(new Logger) (old Logger) {
 	return
 }
 
+// Logger interface
+//
+// See https://github.com/chai2010/logger
 type Logger interface {
 	Debug(v ...interface{})
 	Debugln(v ...interface{})
