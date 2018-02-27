@@ -11,7 +11,7 @@ import (
 	"github.com/chai2010/logger"
 )
 
-func ExampleGetLogger() {
+func Example() {
 	var logger = logger.GetLogger()
 
 	logger.SetLevel("DEBUG")
