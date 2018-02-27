@@ -62,7 +62,7 @@ type Logger interface {
 type logLevelType uint32
 
 const (
-	logUnknownLevel logLevelType = iota // invalid
+	logInvalidLevel logLevelType = iota // invalid
 	logDebugLevel
 	logInfoLevel
 	logWarnLevel
@@ -90,7 +90,7 @@ func newLogLevel(name string) logLevelType {
 	case "FATAL":
 		return logFatalLevel
 	}
-	return logUnknownLevel
+	return logInvalidLevel
 }
 
 func (level logLevelType) String() string {
